@@ -9,10 +9,7 @@ import com.gthm.m3ueditor.m3u.util.WebSeriesDetector;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -104,7 +101,7 @@ public class M3UProcessor {
         return attributes;
     }
 
-    public static void processFile(String m3uFilePath) {
+    public static List<M3uOrganiser> processFile(String m3uFilePath) {
 
 
         try {
@@ -123,11 +120,13 @@ public class M3UProcessor {
 
             }
             printM3uOrganiser(m3uOrganiserList);
+            return m3uOrganiserList;
 
         } catch (IOException e) {
             System.err.println("Error processing M3U file: " + e.getMessage());
             e.printStackTrace();
         }
+        return Collections.emptyList();
     }
 
     private static void printM3uOrganiser(List<M3uOrganiser> m3uOrganiserList) {
