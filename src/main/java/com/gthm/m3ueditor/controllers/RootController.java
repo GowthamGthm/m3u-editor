@@ -1,6 +1,7 @@
 package com.gthm.m3ueditor.controllers;
 
 import com.gthm.m3ueditor.M3UEditorApplication;
+import com.gthm.m3ueditor.m3u.M3UProcessor;
 import com.gthm.m3ueditor.utils.FileUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -67,6 +68,20 @@ public class RootController {
             labelFilePath.setText(absolutePath);
             // Add your file processing logic here
         }
+
+    }
+
+
+    @FXML
+    public void processFile(ActionEvent actionEvent) {
+        String filePath = labelFilePath.getText();
+        boolean validPath = FileUtils.isValidPath(filePath);
+        if(validPath) {
+//            M3UAnalyzer.processM3UFile(filePath);
+            M3UProcessor.processFile(filePath);
+        }
+
+
 
     }
 }

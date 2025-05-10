@@ -1,5 +1,6 @@
 package com.gthm.m3ueditor.utils;
 
+import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 
 public class FileUtils {
@@ -21,6 +22,15 @@ public class FileUtils {
         } else {
             // Fallback: Use the user's home directory if OS is unknown
             return userHome;
+        }
+    }
+
+    public static boolean isValidPath(String path) {
+        try {
+            Paths.get(path);
+            return true;
+        } catch (InvalidPathException e) {
+            return false;
         }
     }
 

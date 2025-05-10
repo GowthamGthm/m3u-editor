@@ -10,6 +10,7 @@ module com.gthm.m3ueditor {
     requires org.kordamp.bootstrapfx.core;
 //    requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires static lombok;
 
     opens com.gthm.m3ueditor to javafx.fxml;
     exports com.gthm.m3ueditor;

@@ -25,12 +25,13 @@
                 </Menu>
             </menus>
         </MenuBar>
-        <SplitPane dividerPositions="0.15" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+        <SplitPane dividerPositions="0.2" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
             <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="598.0">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="77.0" prefWidth="598.0">
                     <children>
-                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#chooseFile" text="Choose File" />
-                        <Label fx:id="labelFilePath" layoutX="101.0" layoutY="14.0" prefHeight="25.0" prefWidth="490.0" text="Chosen File: N/A" />
+                        <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#chooseFile" text="Choose File" />
+                        <Label fx:id="labelFilePath" layoutX="94.0" layoutY="2.0" prefHeight="25.0" prefWidth="490.0" text="Chosen File: N/A" />
+                  <Button fx:id="btn_process_m3u" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#processFile" prefHeight="25.0" prefWidth="77.0" text="Process" />
                     </children>
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="598.0" />
