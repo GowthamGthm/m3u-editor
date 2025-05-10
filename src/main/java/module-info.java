@@ -13,4 +13,6 @@ module com.gthm.m3ueditor {
 
     opens com.gthm.m3ueditor to javafx.fxml;
     exports com.gthm.m3ueditor;
+    exports com.gthm.m3ueditor.controllers;
+    opens com.gthm.m3ueditor.controllers to javafx.fxml;
 }

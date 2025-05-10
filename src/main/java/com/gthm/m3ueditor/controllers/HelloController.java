@@ -1,5 +1,6 @@
-package com.gthm.m3ueditor;
+package com.gthm.m3ueditor.controllers;
 
+import com.gthm.m3ueditor.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
