@@ -14,15 +14,13 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 import static com.gthm.m3ueditor.constant.AppConstants.M3U_TABLE_VIEW_FXML;
 
 public class RootController {
 
     @FXML
-    private Label welcomeText , label_for_tabs;
+    private Label welcomeText, label_for_tabs;
 
     @FXML
     private Label labelFilePath;
@@ -89,7 +87,6 @@ public class RootController {
         String filePath = labelFilePath.getText();
         boolean validPath = FileUtils.isValidPath(filePath);
         if (validPath) {
-//            M3UAnalyzer.processM3UFile(filePath);
             M3UProcessor.processFile(filePath);
         }
     }
@@ -115,9 +112,7 @@ public class RootController {
     }
 
     public void handleTabs(M3uType m3uType) {
-
         label_for_tabs.setText(m3uType.getDisplayName());
-
     }
 
 }
