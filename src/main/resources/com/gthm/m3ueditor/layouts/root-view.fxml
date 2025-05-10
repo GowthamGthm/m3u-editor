@@ -2,39 +2,61 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gthm.m3ueditor.controllers.RootController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gthm.m3ueditor.controllers.RootController">
 
     <children>
         <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <menus>
                 <Menu mnemonicParsing="false" text="File">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Exit" />
+                        <MenuItem mnemonicParsing="false" text="Exit"/>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Edit">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <MenuItem mnemonicParsing="false" text="Delete"/>
                     </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="About" />
+                        <MenuItem mnemonicParsing="false" text="About"/>
                     </items>
                 </Menu>
             </menus>
         </MenuBar>
-        <SplitPane dividerPositions="0.2" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+        <SplitPane dividerPositions="0.2" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="26.0">
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="77.0" prefWidth="598.0">
                     <children>
-                        <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#chooseFile" text="Choose File" />
-                        <Label fx:id="labelFilePath" layoutX="94.0" layoutY="2.0" prefHeight="25.0" prefWidth="490.0" text="Chosen File: N/A" />
-                  <Button fx:id="btn_process_m3u" layoutX="14.0" layoutY="36.0" mnemonicParsing="false" onAction="#processFile" prefHeight="25.0" prefWidth="77.0" text="Process" />
+                        <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#chooseFile"
+                                text="Choose File"/>
+                        <Label fx:id="labelFilePath" layoutX="94.0" layoutY="2.0" prefHeight="25.0" prefWidth="490.0"
+                               text="Chosen File: N/A"/>
+                        <Button fx:id="btn_process_m3u" layoutX="14.0" layoutY="36.0" mnemonicParsing="false"
+                                onAction="#processFile" prefHeight="25.0" prefWidth="77.0" text="Process"/>
+                        <TabPane fx:id="tabs_m3u_types" layoutX="384.0" layoutY="36.0" prefHeight="31.0"
+                                 prefWidth="185.0" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                                <Tab fx:id="tab_livetv" text="LiveTV">
+                                </Tab>
+                                <Tab fx:id="tab_movies" text="Movies">
+                                </Tab>
+                                <Tab fx:id="tab_series" text="Series">
+                                </Tab>
+                            </tabs>
+                        </TabPane>
                     </children>
                 </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="598.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="338.0" prefWidth="598.0">
+                    <children>
+                        <Label fx:id="label_for_tabs" layoutX="197.0" layoutY="88.0" prefHeight="17.0"
+                               prefWidth="210.0"/>
+                    </children>
+                </AnchorPane>
             </items>
         </SplitPane>
     </children>
