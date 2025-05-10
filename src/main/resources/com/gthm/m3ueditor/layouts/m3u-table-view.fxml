@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 <AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.gthm.m3ueditor.controllers.M3UTablesController">
+            fx:controller="com.gthm.m3ueditor.controllers.M3UTableController">
 
 
     <VBox alignment="CENTER" spacing="10">

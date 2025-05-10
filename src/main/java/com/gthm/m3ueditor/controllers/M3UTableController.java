@@ -1,13 +1,13 @@
 package com.gthm.m3ueditor.controllers;
 
-import com.gthm.m3ueditor.HelloApplication;
+import com.gthm.m3ueditor.M3UEditorApplication;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 
 import java.io.IOException;
 
-public class M3UTablesController {
+public class M3UTableController {
     @FXML
     private TableView<?> m3uTable; // Use proper generic type
 
@@ -16,7 +16,7 @@ public class M3UTablesController {
 
     @FXML
     private void goBackToHome() throws IOException {
-        HelloApplication.setRoot("hello-view");
+        M3UEditorApplication.setRoot("hello-view");
     }
 
 }
