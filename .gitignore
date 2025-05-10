@@ -1,0 +1,135 @@
+# Compiled class files
+*.class
+
+# Build output
+bin/
+target/
+build/
+out/
+dist/
+
+# Log file
+*.log
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE specific files
+### Eclipse ###
+.metadata/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.classpath
+.factorypath
+.springBeans
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+### NetBeans ###
+nbproject/
+nbactions.xml
+private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### VS Code ###
+.vscode/
+.settings/
+bin/
+.classpath
+.project
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+
+# local gradle properties
+gradle.properties
+
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# JavaFX specific
+*.fxml.bak
+*.css.bak
+*.properties.bak
+
+# Native dependencies
+lib/
+libs/
+native/
+*.dll
+*.so
+*.dylib
+
+# Application configuration
+config.properties
+*.cfg
+*.prefs
+
+# FXML cache
+*.fxml.cache
+
+# Scene Builder files
+*.fxml.sb
+
+# JavaFX CSS cache
+*.css.cache
+
+# JavaFX resource bundles
+*.properties.cache
+
+# Executables
+*.exe
+*.app
+
+# Documentation
+doc/
+apidocs/
+
+# Test output
+test-output/
+
+.mvn/*
+mvnw
+mvnw.cmd
+

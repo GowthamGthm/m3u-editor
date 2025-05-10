@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.gthm.m3ueditor.M3UTablesController">
+
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label text="M3U-Tables" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+        <TextFlow id="m3u-table-text" style="-fx-background-color: #f0f0f0;">
+            <Text text="Current M3U: " style="-fx-font-weight: bold;"/>
+        </TextFlow>
+    </VBox>
+
+    <TableView>
+        <!-- Your table columns would go here -->
+        <columns>
+            <TableColumn text="Channel Name"/>
+            <TableColumn text="URL"/>
+        </columns>
+    </TableView>
+
+
+    <Button onAction="#goBackToHome" text="Back to Main"/>
+
+</AnchorPane>
